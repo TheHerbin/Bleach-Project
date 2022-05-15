@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"bleach:none"
+	],
+	"icon": "minecraft:calcite",
+	"order": 94,
+	"impact": 3,
+	"name": "Soul",
+	"description": "Aizen Number one",
+    "unchoosable":true
+}

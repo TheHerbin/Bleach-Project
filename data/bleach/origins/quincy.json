@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"bleach:none"
+	],
+	"icon": "minecraft:player_head",
+	"order": 94,
+	"impact": 3,
+	"name": "Quincy",
+	"description": "Aizen Number one",
+    "unchoosable":true
+}

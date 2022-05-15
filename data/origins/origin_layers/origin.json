@@ -1,6 +1,9 @@
 {
   "replace": false,
   "origins": [
-    "bleach:player"
+    "bleach:player",
+    "bleach:human",
+    "bleach:quincy",
+    "bleach:soul"
   ]
 }

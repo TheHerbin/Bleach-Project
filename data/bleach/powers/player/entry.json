@@ -1,0 +1,51 @@
+{
+    "type":"origins:multiple",
+    "join":{
+        "type":"origins:action_on_callback",
+        "entity_action_gained":{
+            "type":"origins:choice",
+            "actions":[
+                {
+                    "element":{
+                        "type":"origins:and",
+                        "actions":[
+                            {
+                                "type":"origins:execute_command",
+                                "command":"origin set @s origins:origin bleach:human"
+                            },
+                            {
+                                "type":"origins:execute_command",
+                                "command":"title @s title {\"text\":\"\"}"
+                            },
+                            {
+                                "type":"origins:execute_command",
+                                "command":"title @a subtitle {\"text\":\"You are Human\",\"bold\":true}"
+                            }
+                        ]
+                    },
+                    "weight":90
+                },
+                {
+                    "element":{
+                        "type":"origins:and",
+                        "actions":[
+                            {
+                                "type":"origins:execute_command",
+                                "command":"origin set @s origins:origin bleach:quincy"
+                            },
+                            {
+                                "type":"origins:execute_command",
+                                "command":"title @s title {\"text\":\"\"}"
+                            },
+                            {
+                                "type":"origins:execute_command",
+                                "command":"title @a subtitle {\"text\":\"You are Quincy\",\"bold\":true}"
+                            }
+                        ]
+                    },
+                    "weight":10
+                }
+            ]
+        }
+    }
+}

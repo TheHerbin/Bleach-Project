@@ -1,6 +1,6 @@
 {
 	"powers": [
-		"player:"
+		"bleach:player/entry"
 	],
 	"icon": "minecraft:player_head",
 	"order": 94,
