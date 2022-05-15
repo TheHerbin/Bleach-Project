@@ -1,0 +1,10 @@
+{
+	"powers": [
+		"player:"
+	],
+	"icon": "minecraft:player_head",
+	"order": 94,
+	"impact": 3,
+	"name": "Bleach",
+	"description": "Aizen Number one"
+}
