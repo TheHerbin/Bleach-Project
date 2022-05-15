@@ -1,6 +1,6 @@
 {
 	"powers": [
-		"bleach:none"
+		"bleach:race_reset"
 	],
 	"icon": "minecraft:calcite",
 	"order": 94,
