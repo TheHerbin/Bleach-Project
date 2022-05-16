@@ -1,0 +1,15 @@
+{
+    "structures": [
+      {
+        "structure": "bleach:hueco_mundo_config",
+        "weight": 1
+      }
+    ],
+    "placement": {
+      "type": "minecraft:concentric_rings",
+      "distance": 32,
+      "spread": 5,
+      "count": 4000
+    }
+  }
+  

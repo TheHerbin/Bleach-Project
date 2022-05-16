@@ -1,0 +1,12 @@
+{
+  "type": "bleach:hueco_mundo_dt",
+  "generator": {
+    "biome_source": {
+      "biome": "bleach:hueco",
+      "type": "minecraft:fixed"
+    },
+    "seed": 1,
+    "settings": "bleach:hueco_n",
+    "type": "minecraft:noise"
+  }
+}

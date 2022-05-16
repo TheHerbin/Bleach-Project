@@ -1,0 +1,14 @@
+{
+    "config": {
+      "top_material": {
+        "Name": "minecraft:clay"
+      },
+      "under_material": {
+        "Name": "minecraft:clay"
+      },
+      "underwater_material": {
+        "Name": "minecraft:clay"
+      }
+    },
+    "type": "minecraft:default"
+  }

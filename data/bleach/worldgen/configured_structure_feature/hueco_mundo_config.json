@@ -1,0 +1,11 @@
+{
+    "type": "minecraft:village",
+    "biomes": "bleach:hueco",
+    "adapt_noise": true,
+    "spawn_overrides": {},
+    "config": {
+      "start_pool": "bleach:hueco_mundo_tp",
+      "size": 6
+    }
+  }
+  

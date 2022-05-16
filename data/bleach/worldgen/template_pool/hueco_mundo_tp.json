@@ -1,0 +1,25 @@
+{
+    "name": "bleach:hueco_mundo_tp",
+    "fallback": "minecraft:empty",
+    "elements": [
+      {
+        "weight": 25,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "bleach:hueco_mundo/dead_tree",
+          "processors": "minecraft:empty"
+        }
+      },
+      {
+        "weight": 5,
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "projection": "terrain_matching",
+          "location": "bleach:hueco_mundo/stairs",
+          "processors": "minecraft:empty"
+        }
+      }
+    ]
+  }
+  
