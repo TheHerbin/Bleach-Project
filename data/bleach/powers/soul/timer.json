@@ -1,0 +1,22 @@
+{
+    "type":"origins:multiple",
+    "bar":{
+        "type":"origins:resource",
+        "min":0,
+        "max":15,
+        "hud_render":{
+            "should_render":true,
+            "sprite_location":"origins:textures/gui/resource_bar.png",
+            "bar_index":5
+        }
+    },
+    "timer":{
+        "type":"origins:action_over_time",
+        "interval":1200,
+        "entity_action":{
+            "type":"origins:change_resource",
+            "resource":"*:soul/timer_bar",
+            "change":1
+        }
+    }
+}

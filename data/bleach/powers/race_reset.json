@@ -96,6 +96,14 @@
                 {
                     "type":"origins:execute_command",
                     "command":"title @s title {\"text\":\"\"}"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command":"origin set @s origins:origin bleach:human"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command":"clear @s nether_star 1"
                 }
             ]
         },

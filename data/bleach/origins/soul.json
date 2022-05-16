@@ -1,6 +1,9 @@
 {
 	"powers": [
-		"bleach:race_reset"
+		"bleach:race_reset",
+		"bleach:soul/body",
+		"bleach:soul/timer",
+		"bleach:soul/evolution"
 	],
 	"icon": "minecraft:calcite",
 	"order": 94,

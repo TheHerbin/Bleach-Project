@@ -1,0 +1,89 @@
+{
+    "type":"origins:multiple",
+    "hollow":{
+        "type":"origins:action_over_time",
+        "interval":20,
+        "entity_action":{
+            "type":"origins:and",
+            "actions":[
+                {
+                    "type":"origins:execute_command",
+                    "command":"origin set @s origins:origin bleach:hollow"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command":"particle minecraft:cloud ~ ~1 ~ .3 .4 .3 .1 30"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command":"playsound minecraft:entity.player.attack.crit master @a[distance=0..10] ~ ~ ~ 10 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s subtitle {\"text\":\"You are now a Hollow\",\"bold\":true}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s title {\"text\":\"\"}"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command":"/tellraw @a [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"dark_aqua\"},{\"text\":\"Bleach\",\"bold\":true,\"color\":\"red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"dark_aqua\"},{\"text\":\" You are now a \"},{\"text\":\"Hollow\",\"bold\":true,\"color\":\"black\"}]"
+                }
+            ]
+        },
+        "condition":{
+            "type":"origins:resource",
+            "resource":"*:soul/timer_bar",
+            "comparison":"==",
+            "compare_to":15
+        }
+    },
+    "shinigami":{
+        "type":"origins:self_action_on_kill",
+        "entity_action":{
+            "type":"origins:and",
+            "actions":[
+                {
+                    "type":"origins:execute_command",
+                    "command":"origin set @s origins:origin bleach:shinigami"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command":"particle minecraft:cloud ~ ~1 ~ .3 .4 .3 .1 30"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command":"playsound minecraft:entity.player.attack.crit master @a[distance=0..10] ~ ~ ~ 10 0"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s subtitle {\"text\":\"You are now a shinigami\",\"bold\":true}"
+                },
+                {
+                    "type": "origins:execute_command",
+                    "command": "title @s title {\"text\":\"\"}"
+                },
+                {
+                    "type":"origins:execute_command",
+                    "command":"/tellraw @a [\"\",{\"text\":\"[\",\"bold\":true,\"color\":\"dark_aqua\"},{\"text\":\"Bleach\",\"bold\":true,\"color\":\"red\"},{\"text\":\"]\",\"bold\":true,\"color\":\"dark_aqua\"},{\"text\":\" You are now a \"},{\"text\":\"Shinigami\",\"bold\":true,\"color\":\"aqua\"}]"
+                }
+            ]
+        },
+        "cooldown":1,
+        "target_condition":{
+            "type": "origins:entity_group",
+            "group": "undead"
+        },
+        "condition":{
+            "type":"origins:equipped_item",
+            "equipment_slot":"mainhand",
+            "item_condition":{
+                "type":"origins:ingredient",
+                "ingredient":{
+                    "item":"iron_sword"
+                }
+            }
+        }
+    }
+}

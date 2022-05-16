@@ -1,0 +1,11 @@
+{
+	"powers": [
+		"bleach:race_reset"
+	],
+	"icon": "minecraft:player_head",
+	"order": 94,
+	"impact": 3,
+	"name": "Hollow",
+	"description": "Aizen Number one",
+    "unchoosable":true
+}

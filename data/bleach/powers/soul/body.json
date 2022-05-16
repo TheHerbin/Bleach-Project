@@ -1,0 +1,33 @@
+{
+    "type":"origins:multiple",
+    "color":{
+        "type":"origins:model_color",
+        "red":0.5,
+        "green":0.5,
+        "blue":0.5,
+        "alpha":0.3
+    },
+    "armor":{
+        "type":"origins:conditioned_restrict_armor",
+        "head": {
+            "type": "origins:armor_value",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "chest": {
+            "type": "origins:armor_value",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "legs": {
+            "type": "origins:armor_value",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "feet": {
+            "type": "origins:armor_value",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    }
+}
