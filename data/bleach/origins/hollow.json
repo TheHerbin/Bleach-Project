@@ -1,6 +1,7 @@
 {
 	"powers": [
-		"bleach:race_reset"
+		"bleach:race_reset",
+		"bleach:hollow/garganta"
 	],
 	"icon": "minecraft:player_head",
 	"order": 94,
